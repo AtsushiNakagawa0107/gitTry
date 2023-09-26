@@ -27,13 +27,11 @@ env:
 phases: 
   pre_build: 
     commands: 
-        # デバッグログ
-       - echo "CX_REPO_NAME : ${CX_REPO_NAME}"
+       # デバッグログ
        - echo "CI_REPOSITORY_URL : ${CI_REPOSITORY_URL}"
        - echo "CI_REPOSITORY_URL : ${CI_REPOSITORY_URL}"
        - echo "CX_TEAM : ${CX_TEAM}"
        - echo "CX_PROJECT : ${CX_PROJECT}"
-       - echo "CX_REPO_BRANCH : ${CX_REPO_BRANCH}"
        - echo "$CODEBUILD_SOURCE_REPO_URL : ${$CODEBUILD_SOURCE_REPO_URL}"
        - echo "$CODEBUILD_WEBHOOK_HEAD_REF : ${$CODEBUILD_WEBHOOK_HEAD_REF}"
        - echo "$CODEBUILD_BUILD_ID : ${$CODEBUILD_BUILD_ID}"
