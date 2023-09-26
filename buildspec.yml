@@ -30,9 +30,9 @@ phases:
        - echo ${CI_REPOSITORY_URL}
        - echo ${CX_TEAM}
        - echo ${CX_PROJECT}
-       - echo ${$CODEBUILD_SOURCE_REPO_URL}
-       - echo ${$CODEBUILD_WEBHOOK_HEAD_REF}
-       - echo ${$CODEBUILD_BUILD_ID}
+       - echo ${CODEBUILD_SOURCE_REPO_URL}
+       - echo ${CODEBUILD_WEBHOOK_HEAD_REF}
+       - echo ${CODEBUILD_BUILD_ID}
        - export CX_REPO_NAME=$(basename "$CODEBUILD_SOURCE_REPO_URL" .git)
        - export CX_REPO_BRANCH=$(basename "$CODEBUILD_WEBHOOK_HEAD_REF") 
        - |
